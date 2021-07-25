@@ -6,8 +6,18 @@
     <script src="simplesController.js"></script>
 </head>
 <body ng-controller="simpleController">
-    Hello <input type="text" ng-model="user.name"/>
+    Nome <input type="text" ng-model="user.name"/>
+    Sobrenome <input type="text" ng-model="user.subname"/>
+    Endereço <input type="text" ng-model="user.address"/>
+    Profissão <input type="text" ng-model="user.profession"/>
+    E-mail <input type="text" ng-model="user.email"/>
     <hr/>
-    <h1>Hello {{user.email}}</h1>
+    <h1>Nome: {{user.name}}</h1>
+    <h1>Sobrenome: {{user.subname}}</h1>
+    <h1>Endereço: {{user.address}}</h1>
+    <h1>Profissão: {{user.profession}}</h1>
+    <h1>E-mail: {{user.email}}</h1>
+    <hr/>
+    
 </body>
 </html>
