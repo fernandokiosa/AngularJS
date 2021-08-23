@@ -16,7 +16,7 @@
             Found erros in the form!
         </span>
         <input type="text" ng-model="name" name="Name" require>
-        <button ng-disabled="myForm.$invalid" ng-click="Salvar()">Save</button>
+        <button type="submit" ng-disabled="name != 'francisco'" ng-click="Salvar()">Save</button>
         <br>
     </form>
     <button ng-click="Redireciona()">teste</button>

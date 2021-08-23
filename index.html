@@ -1,4 +1,4 @@
-<html ng-app="formulario">
+<html ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-   <h1>DeepLink Example</h1>
-   <div ng-view></div>
+    <div ng-controller="appCtrl">
+        <button ng-click="getFruits()">Buscar Frutas</button>
+        <h2 ng-show="fruits.length>0">Frutas</h2>
+        <ul>
+            <li ng-repeat="fruit in fruits" >
+                {{fruit.id}} - {{fruit.name}} ({{fruit.color}})
+            </li>
+        </ul>kl
+            
+    </div>
 </body>
 </html>
